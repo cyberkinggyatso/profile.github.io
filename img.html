@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GyatsoSite</title>
+    <link rel="stylesheet" href="css/img.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <div class="checkbtn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- <button class="checkbtn">#</button> -->
+    </label>
+        <label class="logo">GyatsoSite</label>
+        <ul class="navbar1">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a class="inactive" href="#about">About</a></li>
+            <li><a class="inactive" href="#Services">Services</a></li>
+            <li><a class="inactive" href="#skills">skills</a></li>
+            <li><a class="inactive" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section home_section id="home">
+        <img class="home-img" src="img/img2.png" alt="">
+        <div class="home-text">
+            <hi class="home-title">Hii, <br>I'am <span class="home-title-color">Gyatso</span><br> Web Designer..</hi>
+                    
+        </div>
+      
+        <div class="home_social">
+            <a href="#" class="button">Contact</a> 
+            <a href="#" class="social"><img src="img/github.png" alt="icon1"></a>
+            <a href="#" class="social"><img src="img/instagram.png" alt="icon2"></a>
+            <a href="#" class="social"><img src="img/facebook.png" alt="icon3"></a>
+        </div>
+    </section>
+    <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <img class="sec-img" src="img/profile.jpeg" alt="">
+        </div>
+
+        <div>
+            <h2 class="about__subtitle">I'am Gyatso</h2>
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore temporibus magni, veritatis eligendi ratione modi harum mollitia ab, atque tenetur ea aliquid dicta? Commodi ex ducimus, totam ipsa expedita deleniti?</p>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Card One</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Voluptates quis, minima quibusdam sed similique sequi veniam deserunt 
+                        itaque optio ipsum illo, excepturi temporibus numquam , 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Card Two</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Voluptates quis, minima quibusdam sed similique sequi veniam deserunt 
+                        itaque optio ipsum illo, excepturi temporibus numquam , 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Card Three</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Voluptates quis, minima quibusdam sed similique sequi veniam deserunt 
+                        itaque optio ipsum illo, excepturi temporibus numquam , 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="container1">
+            <div class="card1">
+                <div class="content1">
+                    <img class="contacticon" src="img/contact.png" alt="">
+                    <h2>Contact Us</h2>  
+                    <div class="contactform">
+                        <input class="form-input"type="text" name="name" id="name" placeholder="Enter your name">
+                        <input class="form-input"type="Number" name="Phone" id="Phone" placeholder="Enter Your Phone">
+                        <input class="form-input"type="email" name="email" id="email" placeholder="Enter Your email">
+                        <textarea class="form-input"name="text" id="text" cols="30" rows="10"placeholder="Ellaborate your concern" style="width: 240px; height: 67px;"></textarea>
+                        <button class="btn btn-dark">Submit</button>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var btn = document.querySelector('.btn');
+    
+        btn.addEventListener('click', ()=>{
+            alert('Your message is submite')
+        })
+    </script>
+</body>
+</html>
